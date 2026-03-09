@@ -5,6 +5,7 @@ body{
     align-items:center;
     transition: background 1s ease; 
     background-color: #f0f2f5;
+    padding: 20px;
 }
 .container{
     background: linear-gradient(
@@ -20,7 +21,7 @@ body{
     text-align: center;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 350px;
+    max-width: 400px;
 }
 h1 { margin-bottom: 0; color: #333; }
 h5{ margin-top: 5px; color: #666; font-style: italic; }
@@ -51,4 +52,32 @@ button:hover { transform: scale(1.05); }
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 2rem;
+        width: 90%;
+        border-radius: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 0.9rem;
+    }
+
+    select, button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .quote-text {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
 }
