@@ -1,0 +1,54 @@
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition: background 1s ease; 
+    background-color: #f0f2f5;
+}
+.container{
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.08),
+        rgba(255,255,255,0.02)
+    );
+
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 350px;
+}
+h1 { margin-bottom: 0; color: #333; }
+h5{ margin-top: 5px; color: #666; font-style: italic; }
+
+select, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button {
+    background: #333;
+    color: white;
+    transition: transform 0.2s;
+}
+button:hover { transform: scale(1.05); }
+.quote-text {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    min-height: 50px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

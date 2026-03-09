@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift My Mindset</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body id="bg-layer">
+    <div class="container">
+        <h2>Shift My Mindset</h2>
+        <h5>Quote</h5>
+        
+        <select id="Mood" onchange="updateUI()">
+            <option value="">Select Mood</option>
+            <option value="motivation">Motivation</option>
+            <option value="love">Love</option>
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+        </select>
+
+        <button type="button" id="btn" onclick="fetchNewQuote()">Select a mood first...</button>
+
+        <div id="quoteDisplay" class="quote-text"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
